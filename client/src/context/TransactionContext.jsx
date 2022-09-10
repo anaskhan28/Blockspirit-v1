@@ -97,7 +97,6 @@ export const TransactionProvider = ({children})=>{
             setTransactionCount(transactionCount.toNumber());
 
         }catch(error){
-            console.log(error);
             throw new Error("No ethereum object")
         }
     }
