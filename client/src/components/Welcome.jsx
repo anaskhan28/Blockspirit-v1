@@ -40,7 +40,7 @@ const Welcome = () => {
                         Send Crypto <br/> across the world
                     </h1>
                     <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-                        Explore the crypto world. Buy and Sell cryptocurrencies easily on Krypto.
+                        Explore the crypto world. Buy and Sell cryptocurrencies easily on BlockSpirit.
                     </p>
                     {!currentAccount && (
                     <button type="button" onClick={connectWallet}
@@ -81,7 +81,7 @@ const Welcome = () => {
                             </div>
                             <div>
                                 <p className="text-white font-light text-sm mt-10">
-                                    {( currentAccount)}
+                                    {shortenAddress( currentAccount)}
                                 </p>
                                 <p className="text-white font- semibold text-lg mt-">
                                     Ethereum
