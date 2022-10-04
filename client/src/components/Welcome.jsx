@@ -44,8 +44,8 @@ const Welcome = () => {
                     </p>
                     {!currentAccount && (
                     <button type="button" onClick={connectWallet}
-                    className = "flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd]">
-                    <p className="text-white text-base font-semibold">Connect Wallet</p>
+                    className = "animate-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite  flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd]">
+                    <p className=" text-white text-base font-semibold">Connect Wallet</p>
                     </button>
                     )}
 
