@@ -40,16 +40,16 @@ const Welcome = () => {
                         Send Crypto <br/> across the world
                     </h1>
                     <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-                        Explore the crypto world. Buy and Sell cryptocurrencies easily on Krypto.
+                        Explore the crypto world. Buy and Sell cryptocurrencies easily on BlockSpirit.
                     </p>
                     {!currentAccount && (
                     <button type="button" onClick={connectWallet}
-                    className = "flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd]">
-                    <p className="text-white text-base font-semibold">Connect Wallet</p>
+                    className = "animate-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite  flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd]">
+                    <p className=" text-white text-base font-semibold">Connect Wallet</p>
                     </button>
                     )}
 
-                    <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
+                    <div className=" animate-slide-in grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
                         <div className={`rounded-tl-2xl ${commonStyles}`}>
                             Reliability
                         </div>
@@ -67,9 +67,9 @@ const Welcome = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col flex-1 items-center justify-start w-full 
+                <div className="  flex flex-col flex-1 items-center justify-start w-full 
                 mf:mt-0 mt-10 " >
-                    <div className="p-3 justify-end items-start flex-col rounded-xl 
+                    <div className="animate-bounce 1s linear infinite p-3 justify-end items-start flex-col rounded-xl 
                     h-40 sm:w-72 w-full m-5 eth-card white-glassmorpism">
                         <div className="flex justfiy-between flex-col w-full h-full ">
                             <div className="flex justify-between items-start">
@@ -81,7 +81,7 @@ const Welcome = () => {
                             </div>
                             <div>
                                 <p className="text-white font-light text-sm mt-10">
-                                    {( currentAccount)}
+                                    {shortenAddress( currentAccount)}
                                 </p>
                                 <p className="text-white font- semibold text-lg mt-">
                                     Ethereum
